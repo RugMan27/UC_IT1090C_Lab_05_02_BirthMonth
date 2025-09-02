@@ -14,6 +14,7 @@ public class Main {
         // safe input
         if(in.hasNextInt()){
             int birthMonth = in.nextInt();
+            in.nextLine();
             // correct month checking
             if(birthMonth >= 1 && birthMonth <= 12){
                 System.out.print("Enter your birth month is: " + birthMonth);
