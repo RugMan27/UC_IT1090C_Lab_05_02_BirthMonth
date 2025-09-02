@@ -8,9 +8,13 @@ public class Main {
         Scanner in = new Scanner(System.in);
         String trash = "";
 
+        // input prompt
         System.out.print("Enter your birth month [1-12]: ");
+
+        // safe input
         if(in.hasNextInt()){
             int birthMonth = in.nextInt();
+            // correct month checking
             if(birthMonth >= 1 && birthMonth <= 12){
                 System.out.print("Enter your birth month is: " + birthMonth);
             }else {
